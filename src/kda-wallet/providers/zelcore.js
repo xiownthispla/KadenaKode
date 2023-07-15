@@ -1,10 +1,10 @@
 import axios, { Axios } from "axios";
-
+import Pact from 'pact-lang-api';
 export const ZELCORE = "ZELCORE";
 
 const zelcore = {
   name: "Zelcore",
-  connect: async function(state:any) {
+  connect: async function(state) {
     try {
       window.open("zel:", "_self");
       const accounts = await fetch("http://127.0.0.1:9467/v1/accounts", {
@@ -37,7 +37,7 @@ const zelcore = {
     }
   },
 
-  disconnect: async function(state:any) {
+  disconnect: async function(state) {
     return {
       result: {
         status: "success",
@@ -46,7 +46,7 @@ const zelcore = {
     };
   },
 
-  sign: async function(state:any, signingCommand:any) {
+  sign: async function(state, signingCommand) {
     // console.log('signing cmd', signingCommand);
     let code = signingCommand.pactCode;
     let data = signingCommand.envData;
