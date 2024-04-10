@@ -63,7 +63,7 @@ export default function App() {
 
   return (
     <div className="w-full flex flex-col items-center bg-slate-600">
-      <div className="w-full max-w-5xl h-min min-h-screen flex flex-col text-white text-center">
+      <div className="w-full  h-min min-h-screen flex flex-col text-white text-center">
         <ToastContainer
           position="bottom-right"
           autoClose={5000}
@@ -85,10 +85,6 @@ export default function App() {
         <Navbar />
         <FlexColumn className='p-2 gap-4'>
           <MetaInput/>
-          <FlexRow className='h-auto text-left text-xl gap-2'>
-            <span>Account:</span>
-            <span className='break-all'>{account}</span>
-          </FlexRow>
           <Capabilities/>
           <EnvData/>
           <CodeBlock/>

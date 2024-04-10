@@ -87,7 +87,7 @@ function MetaInput(props) {
   }
 
   return (
-    <FlexColumn className='gap-4'>
+    <FlexColumn className='gap-0'>
       <FlexRow className='h-auto text-left gap-2'>
         <FlexColumn className='flex-1'>
           <span>Chain IDs, (1, 2, 5, 6...):</span>
@@ -107,6 +107,7 @@ function MetaInput(props) {
           >
             <option value="https://api.testnet.chainweb.com">https://api.testnet.chainweb.com</option>
             <option value="https://api.chainweb.com">https://api.chainweb.com</option>
+            <option value="https://kd.crashnet.kinesisbridge.xyz">https://kd.crashnet.kinesisbridge.xyz</option>
           </select>
         </FlexColumn>
         <FlexColumn className='flex-1'>
@@ -119,10 +120,10 @@ function MetaInput(props) {
           >
             <option value="testnet04">testnet04</option>
             <option value="mainnet01">mainnet01</option>
+            <option value="development">crashnet</option>
           </select>
         </FlexColumn>
-      </FlexRow>
-      <FlexRow className='h-auto text-left gap-2'>
+
         <FlexColumn className='flex-1'>
           <span>Gas Limit:</span>
           <input 

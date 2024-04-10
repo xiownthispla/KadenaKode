@@ -24,12 +24,8 @@ function Navbar() {
   }
 
   return (
-    <nav className="w-full flex flex-row space-x-2 justify-between place-items-center p-2 h-40">
-      <div className="h-28">
-        <KadenaKodeLogo
-          width="100%"
-          height="100%"/>
-      </div>
+    <nav className="w-full flex flex-row space-x-2 justify-between place-items-center p-2 h-20">
+
       <FlexRow className="gap-2">
         <CustomButton
           className='flex-1 sm:flex-none'
@@ -39,8 +35,10 @@ function Navbar() {
           className='flex-1 sm:flex-none'
           text={account === '' ? "Connect Wallet" : "Disconnect"}
           onClick={account === '' ? openModal : disconnect} />
+          
+          <span>Account:</span>
+          <span className='break-all'>{account}</span>
       </FlexRow>
-      
     </nav>
   )
 }

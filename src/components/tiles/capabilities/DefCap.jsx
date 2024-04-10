@@ -109,7 +109,7 @@ function DefCap(props) {
             />
           </div>
         </FlexColumn>
-        <FlexColumn className="flex-auto gap-2 w-20">
+        <FlexColumn className="flex gap-2 w-35">
           <FlexRow className="gap-2">
             <input
               id="include"
