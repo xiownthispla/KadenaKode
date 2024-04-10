@@ -33,7 +33,7 @@ function ShareButton(props) {
       params.push(`code=${encodeURIComponent(code)}`);
     }
 
-    var url = `kadenakode.luzzotica.xyz/?${params.join('&')}`;
+    var url = `https://kadena-kode.vercel.app/?${params.join('&')}`;
     console.log(url);
     navigator.clipboard.writeText(url);
     toast.success('Copied share URL to clipboard.');
